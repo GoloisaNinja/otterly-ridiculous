@@ -19,6 +19,7 @@ export const NavLinksWrapper = styled.div`
 		color: #fff;
 		text-decoration: none;
 		font-size: 1.6rem;
+		font-weight: 700;
 		margin-right: 1.5rem;
 	}
 	> a:last-child {

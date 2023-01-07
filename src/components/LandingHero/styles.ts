@@ -51,7 +51,7 @@ export const HeroContentWrapper = styled.div`
 `;
 export const InnerWrapper = styled.div`
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	width: 100%;
 	@media (max-width: 50rem) {
 		flex-direction: column;
@@ -59,14 +59,12 @@ export const InnerWrapper = styled.div`
 `;
 export const InfoBoxWrapper = styled.div`
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 3rem;
 	grid-template-areas: 'a b';
 	@media (max-width: 35rem) {
-		width: 100%;
 		grid-template-areas:
 			'a'
 			'b';
-		grid-gap: 3rem;
 	}
 `;
 export const InfoBox = styled.div`
@@ -74,8 +72,6 @@ export const InfoBox = styled.div`
 	background-color: black;
 	border-radius: 5px;
 	padding: 2rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
 `;
 export const HeroInfo = styled.p`
 	font-size: 1.4rem;

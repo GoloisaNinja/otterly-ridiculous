@@ -18,9 +18,9 @@ import {
 const OtterImg = styled.img`
 	width: 20rem;
 	margin-right: 1.2rem;
-	@media (max-width: 35rem) {
+	@media (max-width: 50rem) {
+		margin: 0 auto;
 		margin-bottom: 3rem;
-		margin-right: 0;
 	}
 `;
 
