@@ -14,7 +14,7 @@ export const HeroWrapper = styled(BasicDivWrapper)`
 	margin-top: 7.5rem;
 `;
 export const OuterWrapper = styled.div`
-	padding: 3rem 1rem 5rem 1rem;
+	padding: 3rem 0 5rem 0;
 	line-height: 1;
 	width: 100%;
 `;
