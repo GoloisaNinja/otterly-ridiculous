@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from 'styled-components';
 
 const typing = keyframes`
-	from {width: 0};
-	to {width: 100%};
+	from {width: 0}
+	to {width: 100%}
 `;
 
 const basicGameWrapperStyle = styled.div`
@@ -64,7 +64,7 @@ export const GameGridWrapper = styled.div`
 	}
 `;
 export const PointsWrapper = styled(basicGameWrapperStyle)`
-	${statusBoxesStyle}
+	${statusBoxesStyle};
 	grid-area: points;
 `;
 export const MoodWrapper = styled(basicGameWrapperStyle)`
@@ -121,7 +121,7 @@ export const StyledInput = styled.input`
 	border: none;
 	background: #2b2b2b;
 	font-family: 'Source Code Pro', monospace;
-	font-size: 1.3.rem;
+	font-size: 1.3rem;
 	color: #be870f;
 	padding: 1rem;
 	border-radius: 3px;
