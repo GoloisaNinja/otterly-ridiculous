@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import orhLogo from '../../assets/navIcon.webp';
 import { NavWrapper, NavLinksWrapper } from './styles';
@@ -19,9 +19,9 @@ const NavBar: React.FC = () => {
 				onClick={() => navigate('/')}
 			/>
 			<NavLinksWrapper>
-				<a href='/games'>games</a>
-				<a href='/about'>about</a>
-				<a href='/contact'>contact</a>
+				<Link to='/games'>games</Link>
+				<Link to='/about'>about</Link>
+				<Link to='/contact'>contact</Link>
 			</NavLinksWrapper>
 		</NavWrapper>
 	);
