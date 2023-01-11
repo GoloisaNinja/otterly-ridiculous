@@ -1,6 +1,6 @@
 import React from 'react';
-import LandingHero from '../LandingHero';
-import LandingQuotes from '../LandingQuotes';
+import LandingHero from '../../components/LandingHero';
+import LandingQuotes from '../../components/LandingQuotes';
 
 const LandingPage: React.FC = () => {
 	return (

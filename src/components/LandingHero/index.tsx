@@ -7,6 +7,7 @@ import {
 	HeroText,
 	HeroSubText,
 	HeroContentWrapper,
+	OtterWrapper,
 	OuterWrapper,
 	InnerWrapper,
 	InfoBoxWrapper,
@@ -14,14 +15,11 @@ import {
 	HeroInfo,
 	ButtonWrapper,
 } from './styles';
+import TypeWriter from '../../helpers/TypeWriter';
 
 const OtterImg = styled.img`
 	width: 20rem;
 	margin-right: 1.2rem;
-	@media (max-width: 50rem) {
-		margin: 0 auto;
-		margin-bottom: 3rem;
-	}
 `;
 
 const LandingHero: React.FC = () => {
@@ -41,32 +39,27 @@ Not at all real...or is it?
 Witty and otterly ridiculous`;
 
 	const heroText: string = 'otterly ridiculous';
-	let speed: number = 125;
-	let textPostition: number = 0;
 
 	useEffect(() => {
-		function typeWriter() {
-			let heroElement: HTMLElement = document.getElementById('heroText')!;
-			heroElement.innerHTML = heroText.substring(0, textPostition);
-			if (textPostition !== heroText.length + 1) {
-				textPostition++;
-				setTimeout(() => {
-					typeWriter();
-				}, speed);
+		if (document !== undefined) {
+			const el = document.getElementById('heroText');
+			if (el !== null) {
+				TypeWriter(heroText, el);
 			}
 		}
-		typeWriter();
-	}, [speed, textPostition]);
+	}, []);
 	return (
 		<HeroWrapper>
 			<OuterWrapper>
 				<HeroText id='heroText'></HeroText>
 				<HeroSubText>history</HeroSubText>
 			</OuterWrapper>
-
 			<HeroContentWrapper>
 				<InnerWrapper>
-					<OtterImg src={OtterSrc} />
+					<OtterWrapper>
+						<OtterImg src={OtterSrc} />
+						<p>oh hai...</p>
+					</OtterWrapper>
 					<InfoBoxWrapper>
 						<InfoBox>
 							<HeroInfo>{iBox1Txt}</HeroInfo>

@@ -5,7 +5,9 @@ import { theme } from '../styles/theme';
 import GlobalStyle from '../styles/global';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import LandingPage from '../components/LandingPage';
+import LandingPage from '../pages/LandingPage';
+import GamesPage from '../pages/GamesPage';
+import GameTemplate from '../pages/GameTemplate';
 
 const AppRouter: React.FC = () => {
 	return (
@@ -14,7 +16,9 @@ const AppRouter: React.FC = () => {
 			<ThemeProvider theme={theme}>
 				<NavBar />
 				<Routes>
-					<Route path='*' element={<LandingPage />} />
+					<Route path='/' element={<LandingPage />} />
+					<Route path='/games' element={<GamesPage />} />
+					<Route path='/games/:id' element={<GameTemplate />} />
 				</Routes>
 				<Footer />
 			</ThemeProvider>

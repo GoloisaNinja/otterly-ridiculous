@@ -11,6 +11,9 @@ export const QuoteSectionIntro = styled.h3`
 	margin-bottom: 2rem;
 	color: #ccc;
 	line-height: 1.2;
+	@media (min-width: 1000px) {
+		font-size: 6rem;
+	}
 `;
 export const QuoteGrid = styled.div`
 	display: grid;
@@ -35,5 +38,8 @@ export const Quote = styled.p`
 	transition: all 0.4s ease-in-out;
 	&:hover {
 		transform: scale(1.03);
+	}
+	@media (min-width: 1000px) {
+		font-size: 2rem;
 	}
 `;

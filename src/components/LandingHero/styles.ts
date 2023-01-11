@@ -19,6 +19,31 @@ export const OuterWrapper = styled.div`
 	width: 100%;
 `;
 
+export const OtterWrapper = styled.div`
+	display: flex;
+	> p {
+		background: #fff;
+		border-radius: 3rem;
+		align-self: flex-start;
+		padding: 2.5rem;
+		font-size: 2.2rem;
+		font-weight: 600;
+		color: #000000;
+		margin-left: -4rem;
+		min-width: 135px;
+		display: none;
+		@media (max-width: 50rem) {
+			display: block;
+		}
+		@media (min-width: 1000px) {
+			display: block;
+		}
+	}
+	@media (max-width: 50rem) {
+		justify-content: center;
+	}
+`;
+
 export const HeroText = styled.h1`
 	font-size: 6rem;
 	color: #fff;
@@ -32,6 +57,12 @@ export const HeroText = styled.h1`
 		animation-duration: 1s;
 		animation-timing-function: linear;
 	}
+	@media (max-width: 592px) {
+		height: 14.4rem;
+	}
+	@media (min-width: 1000px) {
+		font-size: 8rem;
+	}
 `;
 export const HeroSubText = styled.h2`
 	font-family: 'Caveat', cursive;
@@ -43,6 +74,9 @@ export const HeroSubText = styled.h2`
 	animation-delay: 2.5s;
 	animation-duration: 1.4s;
 	animation-fill-mode: backwards;
+	@media (min-width: 1000px) {
+		font-size: 7rem;
+	}
 `;
 export const HeroContentWrapper = styled.div`
 	display: flex;
@@ -66,6 +100,9 @@ export const InfoBoxWrapper = styled.div`
 			'a'
 			'b';
 	}
+	@media (min-width: 1000px) {
+		margin-left: 4rem;
+	}
 `;
 export const InfoBox = styled.div`
 	border: 1px solid #fff;
@@ -77,6 +114,9 @@ export const HeroInfo = styled.p`
 	font-size: 1.4rem;
 	color: #eee;
 	white-space: pre-wrap;
+	@media (min-width: 1000px) {
+		font-size: 1.7rem;
+	}
 `;
 
 export const ButtonWrapper = styled.div`
